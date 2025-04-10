@@ -1,0 +1,68 @@
+
+# Olympic Games Data Analysis
+
+## Project Overview
+
+This project leverages the historical dataset of the modern Olympic Games from Athens 1896 to Rio 2016. The dataset includes detailed information about athletes, their performances, medals, and the host cities. The analysis is built using Databricks, utilizing Apache Spark for data processing, and includes in-built Databricks visualizations for an insightful exploration of the Olympic data.
+
+## Dataset
+
+The dataset is sourced from Kaggle(https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results?utm_source=chatgpt.com) and contains information about individual athletes competing in various Olympic events. The dataset consists of 271,116 rows and 15 columns, with the following fields:
+
+- **ID**: Unique identifier for each athlete
+- **Name**: Athlete's name
+- **Sex**: Gender (M or F)
+- **Age**: Athlete's age (Integer)
+- **Height**: Athlete's height (in centimeters)
+- **Weight**: Athlete's weight (in kilograms)
+- **Team**: Team name
+- **NOC**: National Olympic Committee 3-letter code
+- **Games**: Year and season of the Olympic Games
+- **Year**: Year of the Olympic Games (Integer)
+- **Season**: Summer or Winter
+- **City**: Host city
+- **Sport**: Sport
+- **Event**: Event
+- **Medal**: Medal type (Gold, Silver, Bronze, or NA)
+
+## Project Description
+
+This project explores the Olympic Games data with a focus on various aspects like:
+
+- Trends and insights on medal counts by countries and athletes
+- The first and last appearances of sports in the Olympics
+- The participation and performance evolution of athletes across different Olympic Games
+- Data cleaning and transformation, including casting datatypes to `int` and `float` for easier analysis
+
+The project was built in **Databricks**, using **PySpark** to process large-scale data efficiently. The dataset is loaded into **SQL tables** for easier querying and further analysis. In-built **Databricks visualizations** are used to present the data in interactive graphs, including bar charts, line charts, and column charts.
+
+### Key Features:
+- **Data Cleaning**: The dataset was cleaned to handle missing values, outliers, and ensure proper data formatting.
+- **Data Transformation**: Datatypes were cast to `int` and `float` types for accurate analysis.
+- **Visualizations**: Various in-built Databricks visualizations, such as bar charts and line graphs, were used to gain insights from the data.
+- **Performance Analysis**: Multiple queries and analyses were performed, including the ranking of countries by medal count, trends over the years, and first/last appearances of sports.
+
+## Technologies Used
+
+- **Databricks**: Integrated Spark-based environment for building and visualizing data pipelines.
+- **PySpark**: For processing and analyzing large datasets efficiently.
+- **SQL**: For querying data stored in tables.
+- **Python**: For data processing and analysis.
+- **Databricks Visualizations**: To create interactive visual reports.
+
+
+## Results and Insights
+
+In this project, I uncovered various insights, such as:
+- The evolution of medal distribution over the years
+- The emergence of new sports and their first appearances in the Olympic Games
+- Performance trends and how various countries have evolved in terms of medal wins over the decades
+
+## Acknowledgements
+
+The Olympic data on [sports-reference.com](http://www.sports-reference.com) is the result of extensive research by a group of Olympic enthusiasts and statisticians. The dataset was cleaned and transformed into a format suitable for analysis.
+
+## Inspiration
+
+This project was inspired by a desire to explore the rich history of the Olympic Games and gain valuable insights into athlete performances, medal distributions, and the evolution of different sports and events across the Games.
+
