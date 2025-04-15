@@ -1,0 +1,5 @@
+
+## 📁 **Dataset Description**
+
+The dataset used in this project was **synthetically generated using ChatGPT**, an AI-powered language model developed by OpenAI. A total of **1,000 product reviews** were created by prompting ChatGPT with specific keywords to simulate customer sentiment. Each review consisted of **at least 25 words** to ensure contextual richness. Due to API constraints, only **~40 reviews could be generated per prompt**, requiring multiple iterations to complete the dataset. After generation, the reviews were consolidated in an Excel file, where each review was **manually labeled as either “Positive” or “Negative”** based on its tone and content. The dataset was then exported as a **CSV file** for further analysis and modeling.
+
