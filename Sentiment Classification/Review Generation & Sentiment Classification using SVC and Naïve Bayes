@@ -1,0 +1,73 @@
+
+
+# **Review Generation & Sentiment Classification using ChatGPT and Naïve Bayes**
+
+## 📌 **Project Overview**
+This project explores the use of **ChatGPT** as a tool for synthetic data generation and evaluates the performance of **Naïve Bayes Multinomial Classifier (NBC)** for sentiment analysis.
+
+As part of the assignment, a dataset of **1,000 customer reviews** was generated using ChatGPT based on specific keywords. Each review contains a minimum of 25 words. The primary goal was to simulate customer sentiment data and assess the effectiveness of traditional machine learning algorithms in classifying synthetic text data.
+
+---
+
+## 🤖 **Use of ChatGPT for Data Generation**
+
+**ChatGPT**, a powerful AI language model, was employed to generate review data. Due to limitations in the open-source version, only ~40 reviews could be generated per request, requiring multiple prompts to complete the dataset.
+
+### ✅ Advantages
+- **Creative Output**: ChatGPT provided varied, context-relevant reviews for different products.
+- **Diverse Coverage**: The model's broad training data allowed it to simulate reviews across various topics.
+- **Convenience**: Easily accessible via browser or app, with low response latency.
+
+### ❌ Limitations
+- **Accuracy**: Outputs were often generic and lacked real-world nuance.
+- **Feasibility**: Mimicking human sentiment lacked consistency and depth.
+- **Bias**: Inherent biases from training data sometimes affected output tone or content.
+
+---
+
+## 📊 **Data Transformation & Labeling**
+The generated reviews were:
+- Stored in an **Excel** file under a column titled **"Review"**
+- Manually labeled as **"Positive"** or **"Negative"** in an adjacent **"Label"** column
+- Exported as a **CSV file** for ease of ingestion into machine learning pipelines
+
+---
+
+## 🧠 **Model Performance: Naïve Bayes vs SVM**
+
+### ⚙️ Algorithms Evaluated:
+- **Naïve Bayes Multinomial Classifier (NBC)**
+- **Support Vector Classifier (SVC)**
+
+### 🏁 Results:
+| Model | Accuracy (Cross-Validation) |
+|-------|------------------------------|
+| Naïve Bayes | 99.8% |
+| SVC         | 99.7% |
+
+### 🔍 Observations:
+- NBC is **faster** and **less computationally expensive**
+- NBC performs well on **linear, simple text** (like ChatGPT-generated data)
+- SVM handles **non-linear**, **complex relationships** and is **robust to outliers**
+- NBC was more suited for this dataset due to **straightforward structure**, **balanced labels**, and **simple vocabulary**
+
+
+
+## 📉 **Limitations & Considerations**
+- **Synthetic Data**: The reviews are not from real customers, affecting model generalizability
+- **Neutral Sentiment**: NBC struggles with neutral or ambiguous reviews
+- **Feature Independence**: NBC assumes feature independence, which may not hold for complex text
+
+
+
+## ⚠️ **When NBC May Underperform**
+- On **non-linear datasets** where relationships between features are more complex
+- When **outliers** or **neutral classes** are present
+- In scenarios requiring **contextual understanding**, like sarcasm or multi-intent sentences
+
+
+
+## ✅ **Conclusion**
+Naïve Bayes Multinomial Classifier offers a **highly accurate**, **efficient**, and **easy-to-implement** solution for sentiment classification on synthetically generated datasets. However, reliance on AI-generated data and model assumptions should be acknowledged when generalizing to real-world scenarios.
+
+
