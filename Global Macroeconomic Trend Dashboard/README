@@ -1,0 +1,27 @@
+
+Global Macroeconomic Trends Dashboard (2010–2025)Global Macroeconomic Trends Dashboard (2010–2025)
+Jun 2025 - Jun 2025Jun 2025 - Jun 2025
+
+        This Tableau dashboard presents a comprehensive visualization of global macroeconomic trends from 2010 to 2025, based on data extracted from the World Bank Open Data API. The dataset covers over 200 countries and includes 13 key economic indicators such as GDP, inflation, unemployment rate, real interest rate, public debt, and more.
+
+        The primary goal of this project was to create an interactive and insightful tool for exploring and comparing economic performance across countries and over time. The dashboard enables users to analyze long-term trends, conduct cross-country comparisons, and identify patterns relevant for policymakers, analysts, and researchers.
+
+        Key Features:
+
+         Year-over-year trends for major economic indicators
+
+         Interactive country-level comparisons
+
+         Filterable views by region, indicator, and time period
+
+         Visual insights into macroeconomic stability and growth dynamics
+
+        Technologies Used:
+
+         Data Source: World Bank Open Data API(Kaggle)
+
+         Visualization: Tableau
+
+         Format: CSV (UTF-8), structured for analytics and forecasting
+
+        This project demonstrates the application of data visualization to macroeconomic policy analysis and decision-making, providing stakeholders with a clear, accessible view of complex economic data.
